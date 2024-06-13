@@ -26,6 +26,3 @@ def delete(task_id):
         todos.pop(task_id)
     return redirect(url_for('index'))
 
-# webアプリ起動
-if __name__ == "__main__":
-    app.run(debug=True)
