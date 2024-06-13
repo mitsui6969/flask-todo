@@ -20,6 +20,7 @@ def add():
     print(todos)
     return redirect(url_for('index'))
 
+# /delete/<int:task_id>にアクセスしたときの処理(deleteボタンを押したとき)
 @app.route('/delete/<int:task_id>', methods=['GET'])
 def delete(task_id):
     if 0 <= task_id < len(todos):
